@@ -29,6 +29,35 @@ header h1 {
     margin: 0;
 }
 
+/* Navbar styling */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+nav .nav-links {
+    display: inline-block;
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
 /* Section headings */
 h2 {
     font-size: 1.75em;
@@ -55,6 +84,21 @@ ul {
 p {
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+/* Button styling */
+a.btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+a.btn:hover {
+    background-color: #45a049;
 }
 
 /* Footer */
@@ -102,7 +146,7 @@ footer p {
         padding: 15px;
     }
 
-    header h1 {
+    nav .logo h1 {
         font-size: 1.6rem;
     }
 
