@@ -1,35 +1,45 @@
 /* General styling */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #f7f9f8; /* Light background for contrast */
+    background-color: #f7f9f8;
     color: #333;
     margin: 0;
-    padding: 20px; /* Add padding to body for spacing */
+    padding: 0;
 }
 
-/* Container styling */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white; /* White background for the paper effect */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 12px;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 /* Navbar styling */
 nav {
-    background-color: #4CAF50; /* Matches header color */
+    background-color: #4CAF50;
     padding: 10px 0;
+    border-radius: 8px;
     text-align: center;
-    margin-bottom: 20px; /* Space between nav and content */
-    border-radius: 8px; /* Rounded corners for the navbar */
 }
 
 nav .logo h1 {
     color: white;
     font-size: 2rem;
-    margin: 0; /* Remove default margin */
 }
 
 nav .nav-links {
@@ -46,20 +56,6 @@ nav .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-}
-
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 8px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
 }
 
 /* Section headings */
@@ -116,9 +112,32 @@ footer p {
     margin: 5px 0;
 }
 
-footer strong {
-    font-size: 1.2em;
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
     color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-section a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -127,23 +146,11 @@ footer strong {
         padding: 15px;
     }
 
-    header h1 {
+    nav .logo h1 {
         font-size: 1.6rem;
     }
 
     h2 {
         font-size: 1.6rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    nav .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    nav .nav-links a {
-        font-size: 1rem; /* Smaller font size for mobile */
     }
 }
