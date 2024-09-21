@@ -1,45 +1,35 @@
 /* General styling */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #f7f9f8;
+    background-color: #f7f9f8; /* Light background for contrast */
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Add padding to body for spacing */
 }
 
+/* Container styling */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 12px;
-    background-color: white;
-}
-
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 8px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+    background-color: white; /* White background for the paper effect */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Navbar styling */
 nav {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Matches header color */
     padding: 10px 0;
-    border-radius: 8px;
     text-align: center;
+    margin-bottom: 20px; /* Space between nav and content */
+    border-radius: 8px; /* Rounded corners for the navbar */
 }
 
 nav .logo h1 {
     color: white;
     font-size: 2rem;
+    margin: 0; /* Remove default margin */
 }
 
 nav .nav-links {
@@ -56,6 +46,20 @@ nav .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 /* Section headings */
@@ -101,22 +105,13 @@ a.btn:hover {
     background-color: #45a049;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.2em;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
 /* Contact Section Styling */
 .contact-section {
-    padding: 50px 0;
+    padding: 30px;
     background-color: #f8f9fa;
-    text-align: center;
+    border-radius: 12px; /* Rounded corners */
+    margin-top: 30px; /* Space above the contact section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
 .contact-section h2 {
@@ -140,17 +135,45 @@ footer p {
     text-decoration: underline;
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer strong {
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
     }
 
-    nav .logo h1 {
+    header h1 {
         font-size: 1.6rem;
     }
 
     h2 {
         font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    nav .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav .nav-links a {
+        font-size: 1rem; /* Smaller font size for mobile */
     }
 }
